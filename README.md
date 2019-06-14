@@ -1,7 +1,7 @@
 # MobileStatusBarTheme
 Simple Meta Tag solution for changing color theme of the Mobile Status Bar / Toolbar in Chrome, Firefox OS and Opera.
 
-Insert these Meta tags in the <head> section of your HTML document and use only Hexadecimal as color Codes. 
+Insert these Meta tags in the <head> section of your HTML document but use only Hexadecimal as color codes: 
 ```
 <!-- Android -->
 <meta name="theme-color" content="#ff6800">
@@ -16,7 +16,7 @@ Insert these Meta tags in the <head> section of your HTML document and use only 
 On iOS / Safari you can only change the appearance of the default status bar to either black or black-translucent. With black-translucent, the status bar floats on top of the full screen content, rather than pushing it down. This gives the layout more height, but obstructs the top. But first set the apple-mobile-web-app-capable meta tag to yes to turn on standalone mode.
 
 
-Prefix for older browsers in CSS
+Prefix and trick for older browsers in CSS:
 ```
 #urlbar[level="high"] .autocomplete-textbox-container { background-color: #ff6800 !important; }
 #urlbar[level="low"] .autocomplete-textbox-container { background-color: #ff6800 !important; }
